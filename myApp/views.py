@@ -54,4 +54,5 @@ def temp(request):
     return render(request, "index.html", context )
 
 # テスト    
+# テスト2    
 

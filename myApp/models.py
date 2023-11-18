@@ -10,3 +10,4 @@ class Item( models. Model):
     def __str__( self): return "id: %s name: %s" % (self. id, self. name)
 
 
+# models.py test
