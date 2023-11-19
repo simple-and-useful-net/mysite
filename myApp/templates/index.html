@@ -1,11 +1,16 @@
 
 
-<h1>OKです{{name}}</h1>
+<h1>{{name}}さん</h1>
 
 {{nums}}
+<br>
+
 {% for d in nums %}
-aabb
-<div>{{ d }}</div>
+    <p>
+        No
+        {{ forloop.counter }}
+        {{ d }}
+    </p>
 {% endfor %}
 
 <style>
@@ -17,19 +22,22 @@ aabb
     }
 
 </style>
-{% with data_count=rows|length %}
-data_count {{ data_count }}
-{% endwith %}
-<table border="1">
-    {% for row in rows %}
 
-    <tr>
-        <td>{{ forloop.counter|add:1000 }}</td>
-        {% for col in row %}
-            <td>{{col}}</td>
-        {% endfor %}
-        
-    </tr>
+データ長を表示
+{% with data_count=rows|length %}
+    data_count= {{ data_count }}
+{% endwith %}
+
+
+<table border="1">
+
+    {% for row in rows %}
+        <tr>
+            <td>{{ forloop.counter |add:1000 }}</td>
+            {% for col in row %}
+                <td>{{col}}</td>
+            {% endfor %}
+        </tr>
     {% endfor %}
 
 </table>

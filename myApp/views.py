@@ -32,7 +32,7 @@ def temp(request):
     ]
 
     # キーの順番を指定
-    key_order = ['name', 'phone', 'email']
+    key_order = ['name', 'address', 'email']
 
     rows_data=[]
     for ix in range( len(cust_data) ):
@@ -42,7 +42,7 @@ def temp(request):
         
     context={
         "name":"山田2",
-        "nums": [1,2,3,4,5],
+        "nums": [13,22,344,45,567],        
         "rows": rows_data,
 
         "rows_test":[
