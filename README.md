@@ -1,6 +1,11 @@
-test
+Djangoでファイル
+views.py
+index.html
 
+顧客データのテーブル表示をする
 
-sssssssss
-
-
+    項目の並びを変える
+    データ構造
+    [ {name:aaa, phone:... },
+        {},
+    ]
